@@ -3,27 +3,68 @@
 <head>
   <title>HTML-예제</title>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <h1><a href="index.html">"Leave the door open"</a></h1>
+  <div id="grid">
   <ol>
-    <li><a href="1.html">Bruno mars</a></li>
-    <li><a href="2.html">Anderson Paak</a></li>
-    <li><a href="3.html">Silk sonic</a></li>
+    <li><a href="1.html">Bruno mars</a></li><br>
+    <li><a href="2.html">Anderson Paak</a></li><br>
+    <li><a href="3.html" class="saw" id="active">Silk sonic</a></li><br>
   </ol>
+  <!--
   <ul>
   <li>한솔1</li>
   <li>한솔2</li>
   <li>한솔3</li>
 </ul>
+-->
+  <div id="article">
+    <h2><a href="https://www.google.com/search?q=silk+sonic&bih=1220&biw=1280&hl=ko&sxsrf=ALeKk03lAaw3qLkwJ55bwAe5k85rmAOlEA%3A1621227849353&ei=SfmhYJH_FLuHr7wP8eK4wAY&oq=silk+sonic&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAELEDMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAOgcIIxAnEJ0COgQIIxAnOggIABCxAxCDAToHCCMQ6gIQJzoECAAQCjoECAAQQzoHCAAQsQMQQ1C_TVjDbGDwbWgDcAJ4AIABxwKIAYcOkgEIMC4xMy4wLjGYAQCgAQGqAQdnd3Mtd2l6sAEIwAEB&sclient=gws-wiz&ved=0ahUKEwjRx72w-M_wAhW7w4sBHXExDmgQ4dUDCA4&uact=5" target="_blank" title="실크소닉?">Who is Silk sonic?</a></h2>
 
-<h2><a href="https://www.google.com/search?q=silk+sonic&bih=1220&biw=1280&hl=ko&sxsrf=ALeKk03lAaw3qLkwJ55bwAe5k85rmAOlEA%3A1621227849353&ei=SfmhYJH_FLuHr7wP8eK4wAY&oq=silk+sonic&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAELEDMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAOgcIIxAnEJ0COgQIIxAnOggIABCxAxCDAToHCCMQ6gIQJzoECAAQCjoECAAQQzoHCAAQsQMQQ1C_TVjDbGDwbWgDcAJ4AIABxwKIAYcOkgEIMC4xMy4wLjGYAQCgAQGqAQdnd3Mtd2l6sAEIwAEB&sclient=gws-wiz&ved=0ahUKEwjRx72w-M_wAhW7w4sBHXExDmgQ4dUDCA4&uact=5" target="_blank" title="실크소닉?">Who is Silk sonic?</a></h2>
+    Hypertext Markup Language (HTML) is the standard markup language for <strong>creating <u>web</u> pages</strong> and web applications.
+    <p>실크 소닉(Silk Sonic)은 미국의 R&B 슈퍼 듀오으로, 가수 브루노 마스와 가수 앤더슨 팩이 멤버로 있다. 2021년 3월 5일, 데뷔 싱글 "Leave the Door Open"을 발매했다.</p><br>
+    <img src="Silksonic.jpeg" width=50%>
+    <p> <style="margin-top:45px;">In 2017, Anderson .Paak was the opening act for Bruno Mars on the European leg of the 24K Magic World Tour.[1] In April, Mars and Paak worked together at Abbey Road Studios in London with Nile Rodgers and Guy Lawrence for Chic's album It's About Time, and worked on music while on tour that appeared on Paak's album Ventura.[2][3]
 
-Hypertext Markup Language (HTML) is the standard markup language for <strong>creating <u>web</u> pages</strong> and web applications.
-<p>실크 소닉(Silk Sonic)은 미국의 R&B 슈퍼 듀오으로, 가수 브루노 마스와 가수 앤더슨 팩이 멤버로 있다. 2021년 3월 5일, 데뷔 싱글 "Leave the Door Open"을 발매했다.</p><br>
-<img src="Silksonic.jpeg" width=50%>
-<p> <style="margin-top:45px;">In 2017, Anderson .Paak was the opening act for Bruno Mars on the European leg of the 24K Magic World Tour.[1] In April, Mars and Paak worked together at Abbey Road Studios in London with Nile Rodgers and Guy Lawrence for Chic's album It's About Time, and worked on music while on tour that appeared on Paak's album Ventura.[2][3]
+    On February 26, 2021, Mars announced the band saying, "[Silk Sonic] locked in and made an album."[4] In a press release, they said the band was named by Bootsy Collins after he heard the album.[5] "Leave the Door Open", the lead single for their upcoming album, was released on March 5, along with the intro song, hosted by Collins.[6] The band made their television debut at the 63rd Annual Grammy Awards performing the single, alongside a tribute to Little Richard consisting of "Long Tall Sally" and "Good Golly, Miss Molly".</p>
+  </div>
+</div>
+<p><div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://silksonic.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></p>
 
-On February 26, 2021, Mars announced the band saying, "[Silk Sonic] locked in and made an album."[4] In a press release, they said the band was named by Bootsy Collins after he heard the album.[5] "Leave the Door Open", the lead single for their upcoming album, was released on March 5, along with the intro song, hosted by Collins.[6] The band made their television debut at the 63rd Annual Grammy Awards performing the single, alongside a tribute to Little Richard consisting of "Long Tall Sally" and "Good Golly, Miss Molly".</p>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/60ab283dbbd5354c0fdbb62a/1f6e9acm2';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+</body>
 </html>
