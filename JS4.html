@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>function</title>
+    <script>
+  function nightdayHandler(self){
+    var target = document.querySelector('body')
+    if(self.value === 'Night'){
+      target.style.backgroundColor = 'black';
+      target.style.color = 'white';
+      self.value = 'Day';
+
+      var alist=document.querySelectorAll('li');
+      var i=0;
+      while(i<alist.length){
+      alist[i].style.color = 'powderblue'
+      i = i + 1;
+    }
+  }
+ else {
+      target.style.backgroundColor = 'white';
+      target.style.color ='black';
+      self.value = 'Night';
+
+      var alist=document.querySelectorAll('li');
+      var i=0;
+      while(i<alist.length){
+      alist[i].style.color = 'blue'
+      i = i + 1;
+    }
+  }
+}
+    </script>
+  </head>
+  <body>
+    <h1><script>
+     document.write('hello univers',1+1);
+    </script></h1>
+
+
+  <div>
+    <input  id="night_day" type="button" value="Night" onclick="
+        nightdayHandler(this);
+      ">
+  </div>
+    <input type="text" onchange="alert('수정되었음')">
+    <input type="text" onkeydown="alert('key down!')">
+
+    <div>
+      fuck
+    </div>
+    <span>
+      fuck
+    </span>
+    <input  type="button" value="Night" onclick="
+        nightdayHandler(this);
+      ">
+<!--this와 target 을 이용해 중복 정리-->
+
+    <div>
+      <ul>
+        <script>
+          document.write('<li>1</li>');
+          var i = 0;
+          while(i < 3){
+          document.write('<li>2</li>');
+          document.write('<li>3</li>');
+          i = i + 1;
+        }
+          document.write('<li>4</li>');
+        </script>
+      </ul>
+    </div>
+  </body>
+</html>
