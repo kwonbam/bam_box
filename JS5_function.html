@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>function</title>
+    <title>function5</title>
 
     <style>
       body {font-size:50px;
@@ -25,6 +25,15 @@
     </style>
 
     <script>
+  function setColor(color){
+    var alist=document.querySelectorAll('li');
+    var i = 0;
+    while(i < alist.length){
+    alist[i].style.color = color;
+    i = i + 1;
+  }
+
+  }
   function nightdayHandler(self){
     var target = document.querySelector('body')
     if(self.value === 'Night'){
@@ -32,24 +41,14 @@
       target.style.color = 'white';
       self.value = 'Day';
 
-      var alist=document.querySelectorAll('li');
-      var i=0;
-      while(i<alist.length){
-      alist[i].style.color = 'powderblue'
-      i = i + 1;
-    }
+      setColor('powderblue');
   }
  else {
       target.style.backgroundColor = 'white';
       target.style.color ='black';
       self.value = 'Night';
 
-      var alist=document.querySelectorAll('li');
-      var i=0;
-      while(i<alist.length){
-      alist[i].style.color = 'blue'
-      i = i + 1;
-    }
+      setColor('blue');
   }
 }
     </script>

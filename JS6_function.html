@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>function</title>
+    <title>function5</title>
 
     <style>
       body {font-size:50px;
@@ -25,31 +25,39 @@
     </style>
 
     <script>
+  var Body = {
+    setColor:function (color){
+      document.querySelector('body').style.color = color;
+  },
+    setBackgroundColor:function (color){
+      document.querySelector('body').style.backgroundColor = color;
+  }
+}
+
+
   function nightdayHandler(self){
     var target = document.querySelector('body')
     if(self.value === 'Night'){
-      target.style.backgroundColor = 'black';
-      target.style.color = 'white';
+      Body.setBackgroundColor('black');
+      Body.setColor('white');
       self.value = 'Day';
 
-      var alist=document.querySelectorAll('li');
-      var i=0;
-      while(i<alist.length){
-      alist[i].style.color = 'powderblue'
-      i = i + 1;
-    }
+      setColor('powderblue');
   }
  else {
-      target.style.backgroundColor = 'white';
-      target.style.color ='black';
+      Body.setBackgroundColor('white');
+      Body.setColor('black');
       self.value = 'Night';
 
-      var alist=document.querySelectorAll('li');
-      var i=0;
-      while(i<alist.length){
-      alist[i].style.color = 'blue'
-      i = i + 1;
-    }
+      setColor('blue');
+  }
+}
+function setColor(color){
+  var alist=document.querySelectorAll('li');
+  var i = 0;
+  while(i < alist.length){
+  alist[i].style.color = color;
+  i = i + 1;
   }
 }
     </script>
@@ -65,9 +73,8 @@
         nightdayHandler(this);
       ">
   </div>
-    <input type="text" onchange="alert('수정되었음')">
-    <input type="text" onkeydown="alert('key down!')">
-
+  <input type="text" onchange="alert('수정되었음')">
+  <input type="text" onkeydown="alert('key down!')">
     <div>
       fuck
     </div>
